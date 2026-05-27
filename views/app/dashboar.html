@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard App</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#121212;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    background:#1c1c1c;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:2px solid #2f2f2f;
+}
+
+.user-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:bold;
+    color:#7c4dff;
+}
+
+.profile-pic{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#444;
+}
+
+/* NAV */
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#7c4dff;
+}
+
+/* MAIN */
+
+main{
+    padding:40px 8%;
+}
+
+.dashboard-title{
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+/* CARDS */
+
+.card{
+    background:#1f1f1f;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(124,77,255,0.4);
+}
+
+.card h3{
+    color:#7c4dff;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cfcfcf;
+    line-height:1.6;
+}
+
+.status{
+    color:#4caf50;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="user-area">
+        <div class="logo">BOXGEEK</div>
+
+        <div class="profile-pic"></div>
+
+        <p>Olá, Gustavo</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Consultar Planos</a></li>
+            <li><a href="#">Pedidos</a></li>
+            <li><a href="#">Assinaturas</a></li>
+            <li><a href="#">Acompanhar entrega</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <h1 class="dashboard-title">Seu Dashboard</h1>
+
+    <section class="dashboard">
+
+        <div class="card">
+            <h3>✔ Assinatura Ativa</h3>
+            <p>Sua assinatura está ativa.</p>
+        </div>
+
+        <div class="card">
+            <h3>📦 Plano Atual</h3>
+            <p>Plano Premium Geek Box</p>
+        </div>
+
+        <div class="card">
+            <h3>🚚 Próxima Entrega</h3>
+            <p>15 de Junho de 2026</p>
+        </div>
+
+        <div class="card">
+            <h3>💳 Status Pagamento</h3>
+            <p class="status">Pagamento Confirmado</p>
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>
