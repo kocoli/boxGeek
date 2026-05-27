@@ -1,0 +1,158 @@
+:root {
+
+/* ===== BACKGROUNDS ===== */
+
+--bg-main: #121826;
+--bg-sidebar: #0F172A;
+--bg-card: #1B2436;
+--bg-hover: #25314A;
+
+/* ===== TEXT ===== */
+
+--text-primary: #F8FAFC;
+--text-secondary: #CBD5E1;
+--text-muted: #94A3B8;
+
+/* ===== BRAND ===== */
+
+--primary: #8B5CF6;
+--primary-hover: #7A51DA;
+--primary-dark: #4C3287;
+
+--secondary: #22D3EE;
+--secondary-hover: #189CB0;
+--secondary-dark: #0E5A66;
+
+/* ===== BUTTONS ===== */
+
+--btn-primary: #EC4899;
+--btn-primary-hover: #F88BC1;
+--btn-primary-soft: #F9C3DE;
+
+/* ===== STATES ===== */
+
+--success: #22C55E;
+--warning: #F59E0B;
+--danger: #EF4444;
+
+/* ===== BORDERS ===== */
+
+--border-color: #334155;
+--border-soft: #475569;
+
+/* ===== SHADOWS ===== */
+
+--shadow-soft: 0 4px 12px rgba(0,0,0,0.20);
+--shadow-hard: 0 8px 24px rgba(0,0,0,0.35);
+
+}
+
+
+
+/* ==========================================
+   LIGHT THEME
+========================================== */
+
+[data-theme="light"] {
+
+/* ===== BACKGROUNDS ===== */
+
+--bg-main: #F8FAFC;
+--bg-sidebar: #FFFFFF;
+--bg-card: #FFFFFF;
+--bg-hover: #EEF2FF;
+
+/* ===== TEXT ===== */
+
+--text-primary: #1E293B;
+--text-secondary: #475569;
+--text-muted: #64748B;
+
+/* ===== BRAND ===== */
+
+--primary: #8B5CF6;
+--primary-hover: #7A51DA;
+--primary-dark: #5B21B6;
+
+--secondary: #06B6D4;
+--secondary-hover: #0891B2;
+--secondary-dark: #0E7490;
+
+/* ===== BUTTONS ===== */
+
+--btn-primary: #EC4899;
+--btn-primary-hover: #DB2777;
+--btn-primary-soft: #FCE7F3;
+
+/* ===== STATES ===== */
+
+--success: #16A34A;
+--warning: #D97706;
+--danger: #DC2626;
+
+/* ===== BORDERS ===== */
+
+--border-color: #CBD5E1;
+--border-soft: #E2E8F0;
+
+/* ===== SHADOWS ===== */
+
+--shadow-soft: 0 2px 8px rgba(15,23,42,0.08);
+--shadow-hard: 0 8px 20px rgba(15,23,42,0.15);
+
+}
+
+
+
+/* ==========================================
+   DARK THEME
+========================================== */
+
+[data-theme="dark"] {
+
+/* ===== BACKGROUNDS ===== */
+
+--bg-main: #121826;
+--bg-sidebar: #0F172A;
+--bg-card: #1B2436;
+--bg-hover: #25314A;
+
+/* ===== TEXT ===== */
+
+--text-primary: #F8FAFC;
+--text-secondary: #CBD5E1;
+--text-muted: #94A3B8;
+
+/* ===== BRAND ===== */
+
+--primary: #8B5CF6;
+--primary-hover: #7A51DA;
+--primary-dark: #4C3287;
+
+--secondary: #22D3EE;
+--secondary-hover: #189CB0;
+--secondary-dark: #0E5A66;
+
+/* ===== BUTTONS ===== */
+
+--btn-primary: #EC4899;
+--btn-primary-hover: #F88BC1;
+--btn-primary-soft: #F9C3DE;
+
+/* ===== STATES ===== */
+
+--success: #22C55E;
+--warning: #F59E0B;
+--danger: #EF4444;
+
+/* ===== BORDERS ===== */
+
+--border-color: #334155;
+--border-soft: #475569;
+
+/* ===== SHADOWS ===== */
+
+--shadow-soft: 0 4px 12px rgba(0,0,0,0.20);
+--shadow-hard: 0 8px 24px rgba(0,0,0,0.35);
+
+}

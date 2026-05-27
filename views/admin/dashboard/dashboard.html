@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/amigurumisNV/view/assets/_common/css/common.css">
+    <link rel="stylesheet" href="/amigurumisNV/view/assets/admin/css/dashboard/dashboard.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">dashboard</a></li>
+                    <li class="has-submenu">
+                        <a href="#">Meus Clientes</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="submenu">
+                            <li><a href="#">Pesquisar</a></li>
+                            <li><a href="#">Listar todos</a></li> <!--listar numa tabela onde permita fazer as ações CRUD-->
+                        </ul>
+                    </li>    
+                    <li class="has-submenu">
+                        <a href="#">Assinaturas</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="submenu">
+                            <li><a href="#">Criar planos</a></li>
+                            <li><a href="#">Editar benefícios</a></li>
+                            <li><a href="#">Alterar preços</a></li>
+                            <li><a href="#">Cancelar assinatura</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Pedidos</a></li>
+                    <li class="has-submenu">
+                        <a href="#">Produtos</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="submenu">
+                            <li><a href="#">Listar Produtos</a></li>
+                            <li><a href="#">Cadastrar Produtos</a></li>
+                            <li><a href="#">Estoque</a></li>
+                        </ul>
+                    </li>    
+                    <li class="has-submenu">
+                        <a href="#">Caixas</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="submenu">
+                            <li><a href="#">Nova caixa</a></li>
+                            <li><a href="#">Listar caixas</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Área Pública</a></li>
+                    <li><a href="#">Outros ADMs</a></li>
+                    <li><a href="#">Relatórios</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <header>
+            <input type="search" placeholder="Procure...">
+            <div>
+                <img src="" alt="Foto de perfil administrador">
+                <p>Olá, administrador</p>
+            </div>
+            <div>
+                <button><i class="fa-solid fa-bell"></i></button>
+                <button><i class="fa-solid fa-envelope"></i></button>
+                <button><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </header>
+
+        <main>
+            <div>
+                <div class="card">
+                    <h3>Plano mais vendido</h3>
+                    <!--Gráfico de barrinha com planos e n de vendas-->
+                    <p>
+                        O plano mais vendido esse mês foi o <span id="plan"></span>! Com um total de <span></span> vendas. O queridinho dos clientes. Para mais informações sobre os plnos <a href="#">clique aqui</a>
+                    </p>
+                </div>
+                <div>
+                    <div class="card">
+                        <span class="performace">7% ↑</span>
+                        <h3>Clientes Ativos</h3>
+                        <span>500+</span>
+                        <!--Quero mostrar um grafico de porcentagem, rosquinha bem fina-->
+                    </div>
+                    <div class="card">
+                        <span class="performace">2% ↑</span>
+                        <h3>Assinaturas Ativas</h3>
+                        <span>50+</span>
+                        <!--Quero mostrar um grafico de porcentagem, rosquinha bem fina-->
+                    </div>
+                    <div class="card">
+                        <span class="performace">1% ↓</span>
+                        <h3>Cancelamentos</h3>
+                        <span>17+</span>
+                        <!--Quero mostrar um grafico de porcentagem, rosquinha bem fina-->
+                    </div>
+                    <div class="card">
+                        <span class="performace">95.7% ✓</span>
+                        <h3>Total Clientes</h3>
+                        <span>500+</span>
+                        <!--Quero mostrar um grafico de porcentagem, rosquinha bem fina-->
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!--Aqui vão os gráficos referentes ao 1.faturamento mensal e a 2.popularidade do microsaas-->
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
