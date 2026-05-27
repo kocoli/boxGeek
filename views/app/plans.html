@@ -1,46 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus planos</title>
+    <title>Planos</title>
+    <link rel="stylesheet" href="../assets/_common/css/common.css">
+    <link rel="stylesheet" href="../assets/app/css/app.css">
+    <link rel="stylesheet" href="../assets/app/css/pages/plans.css">
 </head>
 <body>
-    <h1>Meu plano</h1>
-    <section>
-        <span>Plano atual:</span><span>Premiun</span>
-        <div>
-            <h2>Benefícios:</h2>
-            <ul>
-                <li>beneficio 1</li>
-                <li>beneficio 2</li>
-                <li>beneficio 3</li>
-            </ul>
-        </div>
-        <span>Status:</span><span>Ativo</span>
-    </section>
-    <section>
-        <h2>Veja outros planos:</h2>
-        <!--Informações de outros planos-->
-        <!--
-            [ Básico ]
-                R$19,90/mês
+    <header>
 
-                ✓ 10 produtos
-                ✓ Suporte padrão
-
-                [ Ver Detalhes ] [ Migrar ]
-
-            [ Profissional ]
-                R$79,90/mês
-
-                ✓ Produtos ilimitados
-                ✓ Relatórios completos
-                ✓ Atendimento prioritário
-
-                [ Ver Detalhes ] [ Migrar ]
-        -->
+        <div class="user-area">
+            <div class="logo">BOXGEEK</div>
         
+            <div class="profile-pic"></div>
+        
+            <p>Olá, Gustavo</p>
+        </div>
+    
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Início</a></li>
+                <li><a href="plans.html">Consultar Planos</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Assinaturas</a></li>
+                <li><a href="#">Acompanhar entrega</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="plans-nav">
+        <nav>
+            <ul>
+                <li><a href="#myPlan">Meu Plano</a></li>
+                <li><a href="">Detalhes</a></li>
+                <li><a href="">Outros Planos</a></li>
+                <li><a href="">Mudar Plano</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+    <section id="myPlan">
+
+        <div class="card">
+            <h2>Meu plano atual</h2>
+            <p>
+                <span>Plano:</span>
+                Caixa Premium
+            </p>
+            <p>
+                <span>Descrição:</span>
+                Caixa mensal com itens colecionáveis,
+                produtos exclusivos e benefícios premium.
+            </p>
+            <div class="popularity">
+                <h3>Popularidade</h3>
+                <div class="bar-container">
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+            <div class="plan-info">
+                <div class="info-box">
+                    <h4>Data de assinatura</h4>
+                    <p>12/02/2026</p>
+                </div>
+                <div class="info-box">
+                    <h4>Renovação</h4>
+                    <p>12/06/2026</p>
+                </div>
+                <div class="info-box">
+                    <h4>Status</h4>
+                    <p>Ativo</p>
+                </div>
+            </div>
+            
+            <button class="btn-change">
+                Alterar Plano
+            </button>
+
+        </div>
+
     </section>
+    </main>
 </body>
 </html>

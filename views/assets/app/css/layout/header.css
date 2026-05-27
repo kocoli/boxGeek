@@ -1,0 +1,51 @@
+
+header{
+    background: var(--bg-sidebar);
+    padding:1rem 2rem;
+    border-bottom:1px solid var(--border-color);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.user-area{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.logo{
+    font-size:1.6rem;
+    font-weight:bold;
+    color:var(--primary);
+}
+
+.profile-pic{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:var(--primary);
+}
+
+.user-area p{
+    color:var(--text-secondary);
+}
+
+header nav ul{
+    display:flex;
+    gap:1rem;
+    list-style:none;
+}
+
+header nav a{
+    text-decoration:none;
+    color:var(--text-secondary);
+
+    transition:.25s;
+}
+
+header nav a:hover{
+    color:var(--secondary);
+}

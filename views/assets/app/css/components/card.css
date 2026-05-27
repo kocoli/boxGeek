@@ -1,0 +1,27 @@
+.card{
+    background:#1f1f1f;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(124,77,255,0.4);
+}
+
+.card h3{
+    color:#7c4dff;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cfcfcf;
+    line-height:1.6;
+}
+
+.status{
+    color:#4caf50;
+    font-weight:bold;
+}
