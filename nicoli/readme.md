@@ -1,0 +1,1 @@
+Decidi refazer o estilo da app, baseado em um projeto meu antigo. Esperando confirmação para passar para o projeto real.
