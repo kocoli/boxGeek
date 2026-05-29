@@ -32,6 +32,7 @@
     /* Buttons */
     --btn-primary: #EC4899;
     --btn-soft-01: #F9C3DE;
+    --btn-transparent: #f7e0eb62;
     --btn-hover: #F88BC1;
 
     --btn-secondary: #fceef5;
@@ -45,9 +46,15 @@
     --border-color: #334155;
     --border-soft: #475569;
 
+    --border-btns1: #EC4899;
+    --border-btns2: #22D3EE;
+
+    --border-card: #8B5CF6;
+
     /* shandows */
-    --shadow-soft: 0 4px 12px rgba(0,0,0,0.20);
+    --shadow-soft: 0 6px 12px rgba(0,0,0,0.20);
     --shadow-hard: 0 8px 24px rgba(0,0,0,0.35);
 
     /* Transitions */
+    --transition: 0.3s ease-in-out;
 }

@@ -1,0 +1,17 @@
+.close {
+    width: 70px;
+}
+
+.close li a span{
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.close ~ .container {
+    margin-left: 75px;
+}
+
+.d-none{
+    display: none;
+}
