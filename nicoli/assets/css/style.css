@@ -1,6 +1,10 @@
 @import url('base/variables.css');
+@import url('base/font.css');
 @import url('base/reset.css');
 
+@import url('layout/header.css');
+
 @import url('components/sidebar.css');
+@import url('components/images.css');
 
 @import url('utils/sidebar.css');

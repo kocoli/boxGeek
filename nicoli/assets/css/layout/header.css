@@ -1,0 +1,43 @@
+.header-container,
+.logo,
+.header-nav-user,
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-container {
+    background-color: var(--bg);
+    color: var(--text-primary);
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    box-shadow: var(--shadow-soft);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-family: var(--font-logo);
+    font-size: 0.95rem;
+    letter-spacing: 0.1rem;
+}
+
+.logo-title {
+    transform: skewX(-15deg);
+    display: inline-block;
+}
+
+.txt-emphasis {
+    color: var(--primary-10);
+}
+
+.profile {
+    background-color: var(--bg-card);
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: var(--transition);
+    cursor: pointer;
+    gap: 5px;
+}
