@@ -13,7 +13,6 @@
 
 .navbar li a:hover {
     color: var(--text-secondary);
-    box-shadow: var(--shadow-magic);
 }
 
 .navbar li i {
