@@ -1,0 +1,21 @@
+.navbar .ul-navbar{
+    background-image: linear-gradient(var(--bg), var(--bg-sidebar));
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    list-style: none;
+}
+
+.navbar li a {
+    color: var(--secondary-10);
+}
+
+.navbar li a:hover {
+    color: var(--text-secondary);
+    box-shadow: var(--shadow-magic);
+}
+
+.navbar li i {
+    letter-spacing: 0.5rem;
+}
