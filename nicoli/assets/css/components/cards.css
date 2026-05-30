@@ -1,0 +1,14 @@
+.cards-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.card-kip {
+    width: 300px;
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    padding: 1rem;
+    text-align: center;
+}

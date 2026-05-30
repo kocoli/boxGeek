@@ -1,5 +1,4 @@
 .navbar .ul-navbar{
-    background-image: linear-gradient(var(--bg), var(--bg-sidebar));
     padding: 1rem 0;
     display: flex;
     justify-content: center;
