@@ -10,8 +10,9 @@
 .header-container {
     background-color: var(--bg);
     color: var(--text-primary);
+    height: 10vh;
     justify-content: space-between;
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     box-shadow: var(--shadow-soft);
     position: sticky;
     top: 0;
