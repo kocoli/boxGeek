@@ -14,7 +14,7 @@
     --text-primary: #F8FAFC;
     --text-secondary: #CBD5E1;
     --text-terciary: #151618;
-    --text-mutted: #94A3B8;
+    --text-mutted: #f1dcee;
 
     /* Brand */
     --primary-10: #8B5CF6;
@@ -32,10 +32,8 @@
     /* Buttons */
     --btn-primary: #EC4899;
     --btn-soft-01: #F9C3DE;
-    --btn-transparent: #f7e0eb62;
     --btn-hover: #F88BC1;
-
-    --btn-secondary: #fceef5;
+    
 
     /* status */
     --success: #22C55E;
@@ -54,6 +52,7 @@
     /* shandows */
     --shadow-soft: 0 6px 12px rgba(0,0,0,0.20);
     --shadow-hard: 0 8px 24px rgba(0,0,0,0.35);
+    --shadow-magic: 0 8px 24px rgba(138, 92, 246, 0.281);
 
     /* Transitions */
     --transition: 0.3s ease-in-out;

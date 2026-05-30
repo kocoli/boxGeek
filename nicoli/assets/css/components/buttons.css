@@ -1,0 +1,40 @@
+.btn-icon {
+    width: 40px;
+    background: transparent;
+    color: var(--btn-primary);
+    font-size: 1.5rem;
+}
+
+.btn-icon:hover {
+    background-color: var(--secondary-12);
+    color: var(--text-secondary);
+}
+
+.btn-primary,
+.btn-secondary {
+    font-size: 0.5;
+    padding: .5rem 1.2rem;
+}
+
+.btn-primary {
+    background-color: var(--btn-primary);
+    color: var(--text-primary);
+    font-weight: bolder;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: solid 3px var(--secondary-10);
+    color: var(--secondary-10);
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-hover);
+    color: var(--text-mutted);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-12);
+    border: solid 3px var(--text-secondary);
+    color: var(--text-secondary);
+}
