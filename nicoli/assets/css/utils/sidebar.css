@@ -11,7 +11,3 @@
 .close ~ .container {
     margin-left: 75px;
 }
-
-.d-none{
-    display: none;
-}

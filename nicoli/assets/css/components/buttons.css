@@ -6,8 +6,8 @@
 }
 
 .btn-icon:hover {
-    background-color: var(--secondary-12);
-    color: var(--text-secondary);
+    color: var(--btn-hover);
+    text-shadow: var(--shadow-magic);
 }
 
 .btn-primary,

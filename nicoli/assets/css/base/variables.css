@@ -52,7 +52,7 @@
     /* shandows */
     --shadow-soft: 0 6px 12px rgba(0,0,0,0.20);
     --shadow-hard: 0 8px 24px rgba(0,0,0,0.35);
-    --shadow-magic: 0 8px 24px rgba(138, 92, 246, 0.281);
+    --shadow-magic: 0 5px 24px rgba(138, 92, 246, 0.486);
 
     /* Transitions */
     --transition: 0.3s ease-in-out;

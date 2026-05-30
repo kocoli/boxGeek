@@ -9,4 +9,5 @@
 @import url('components/images.css');
 @import url('components/buttons.css');
 
+@import url('utils/display.css');
 @import url('utils/sidebar.css');
