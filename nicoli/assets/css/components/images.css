@@ -5,3 +5,12 @@
     border: 2px solid var(--primary-10);
     object-fit: cover;
 }
+
+.img-preferences {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-10);
+    background-color: var(--neutra);
+    object-fit: cover;
+}
