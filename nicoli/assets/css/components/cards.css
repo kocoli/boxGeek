@@ -8,7 +8,7 @@
     ;
 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 15vh 65vh;
+    grid-template-rows: 12vh 65vh;
     gap: 2rem;
     padding: 1.5rem;
 }
@@ -40,7 +40,7 @@
 
 .card-content p{
     color:var(--text-primary);
-    font-size:1.8rem;
+    font-size:1.2rem;
     font-weight:700;
 }
 

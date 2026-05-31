@@ -9,8 +9,7 @@
 @import url('components/images.css');
 @import url('components/cards.css');
 @import url('components/buttons.css');
-@import url('components/progress-bar.css');
+@import url('components/timeline-product.css');
 
 @import url('utils/display.css');
 @import url('utils/sidebar.css');
-@import url('utils/status-order.css');
