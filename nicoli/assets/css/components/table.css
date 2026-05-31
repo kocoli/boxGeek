@@ -33,5 +33,5 @@
 }
 
 .orders tbody tr:hover {
-    background: var(--bg-hover);
+    background-color: var(--bg-hover);
 }
