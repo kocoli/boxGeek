@@ -1,0 +1,37 @@
+.orders h2 {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.orders table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders table tr {
+    text-align: center;
+}
+
+.orders thead {
+    background: var(--primary-10);
+    font-weight: bolder;
+}
+
+.orders thead th {
+    padding: 1rem;
+}
+
+.orders td {
+    padding: 1rem;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.orders tbody tr {
+    transition: 25s ease;
+}
+
+.orders tbody tr:hover {
+    background: var(--bg-hover);
+}
