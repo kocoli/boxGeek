@@ -4,6 +4,7 @@
 
 @import url('layout/header.css');
 @import url('layout/main.css');
+@import url('layout/grid-cards.css');
 
 @import url('components/sidebar.css');
 @import url('components/navbar.css');

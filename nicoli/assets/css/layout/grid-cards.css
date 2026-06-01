@@ -1,0 +1,44 @@
+/* Tentativa de arrumar o layout */
+.container-cards{
+    height: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: auto 1fr;
+}
+
+.orders,
+.card-hero,
+.card-preferences{
+    height:100%;
+}
+
+.card-top {
+    height: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.cards-principal {
+    height: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+       "hero card prefer prefer"
+       "hero card table table"
+    ;
+    gap: 1rem;
+}
+
+.orders{
+    grid-area:table;
+}
+
+.card-hero{
+    grid-area:hero;
+}
+
+.card-preferences{
+    grid-area:prefer;
+}
