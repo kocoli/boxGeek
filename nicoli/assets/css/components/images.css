@@ -14,3 +14,7 @@
     background-color: var(--neutra);
     object-fit: cover;
 }
+
+.month-person-theme-img {
+    max-width: 250px;
+}

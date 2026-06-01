@@ -73,6 +73,9 @@
     color: var(--text-mutted);
 }
 
+
+.plans ,
+.monthTheme,
 .card-preferences {
     padding: 1rem;
     background-color: var(--bg-card);
@@ -92,4 +95,31 @@
 .prefer-icon {
     display: flex;
     gap: .5rem;
+}
+
+.plans h2,
+.plans p {
+    color: var(--text-primary);
+}
+
+.plans p{
+    text-align: left;
+}
+
+.plans p span {
+    color: var(--primary-10);
+    font-weight: bold;
+}
+
+.monthTheme {
+    background: linear-gradient(var(--bg-card), var(--secondary-13), var(--primary-13));
+    border: 3px solid var(--primary-14);
+}
+
+.monthTheme h2 {
+    color: var(--secondary-10);
+}
+
+.monthTheme h2 span {
+    color: var(--text-primary);
 }

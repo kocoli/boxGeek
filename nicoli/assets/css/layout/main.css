@@ -1,3 +1,4 @@
 main {
     height: calc(100vh - 10vh);
+    padding: 1rem;
 }
