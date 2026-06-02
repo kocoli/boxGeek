@@ -1,0 +1,391 @@
+/* ====================================
+   PÁGINAS INTERNAS
+==================================== */
+
+.page-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ====================================
+   SEÇÕES
+==================================== */
+
+.page-section{
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.page-section h2{
+    color: var(--primary-10);
+    margin-bottom: 1rem;
+    font-family: var(--font-logo);
+}
+
+.page-section h3{
+    color: var(--secondary-10);
+    margin: 1.5rem 0 .75rem;
+}
+
+.page-section p,
+.page-section li{
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.page-section ul{
+    padding-left: 1.5rem;
+}
+
+/* ====================================
+   HOME
+==================================== */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(
+        135deg,
+        var(--bg-card),
+        var(--primary-14)
+    );
+    border: 1px solid var(--secondary-10);
+    border-radius: 24px;
+    box-shadow: var(--shadow-magic);
+}
+
+.hero h2{
+    color: var(--primary-10);
+    font-size: 2rem;
+}
+
+.hero p{
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ====================================
+   GRID HOME
+==================================== */
+
+.grid-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.grid-cards .card{
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.grid-cards .card:hover{
+    transform: translateY(-5px);
+    background: var(--bg-hover);
+}
+
+.grid-cards .card i{
+    color: var(--primary-10);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.grid-cards .card h3{
+    color: var(--text-primary);
+}
+
+.grid-cards .card p{
+    color: var(--text-secondary);
+}
+
+/* ====================================
+   FORMULÁRIOS
+==================================== */
+
+.form-card{
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label{
+    color: var(--text-primary);
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: .9rem 1rem;
+    color: var(--text-primary);
+    transition: var(--transition);
+}
+
+.form-group textarea{
+    resize: vertical;
+    min-height: 140px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    outline: none;
+    border-color: var(--primary-10);
+    box-shadow: var(--shadow-magic);
+}
+
+.form-card button{
+    margin-top: .5rem;
+}
+
+/* ====================================
+   CONTATO
+==================================== */
+
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-item{
+    background: var(--bg);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 1rem;
+}
+
+.contact-item h3{
+    margin-top: 0;
+}
+
+/* ====================================
+   FAQ
+==================================== */
+
+details{
+    background: var(--bg);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+details[open]{
+    border-color: var(--primary-10);
+}
+
+summary{
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-weight: 700;
+    list-style: none;
+}
+
+summary::-webkit-details-marker{
+    display: none;
+}
+
+details p{
+    padding: 0 1rem 1rem;
+    color: var(--text-secondary);
+}
+
+/* ====================================
+   LOGIN
+==================================== */
+
+.login-link{
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.login-link a{
+    color: var(--primary-10);
+    font-weight: 700;
+}
+
+/* ====================================
+   SOBRE
+==================================== */
+
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.about-card{
+    background: var(--bg);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.about-card h3{
+    margin-top: 0;
+}
+
+/* ====================================
+   RESPONSIVO
+==================================== */
+
+@media(max-width:768px){
+
+    .page-section{
+        padding: 1.2rem;
+    }
+
+    .hero h2{
+        font-size: 1.5rem;
+    }
+
+    .grid-cards,
+    .contact-info,
+    .about-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-cards-home{
+    margin-top: 1rem;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:1rem;
+}
+
+.page-panel,
+.form-panel{
+    background:var(--bg-card);
+    border:1px solid var(--border-color);
+    border-radius:24px;
+    padding:2rem;
+    box-shadow:var(--shadow-soft);
+}
+
+.page-panel h2,
+.form-panel h2{
+    color:var(--primary-10);
+    margin-bottom:1.5rem;
+}
+
+.about-grid,
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:1rem;
+    margin-top:1rem;
+}
+
+.about-card,
+.contact-card{
+    background:var(--bg);
+    border:1px solid var(--border-color);
+    border-radius:20px;
+    padding:1.5rem;
+}
+
+.contact-card{
+    text-align:center;
+}
+
+.contact-card i{
+    color:var(--secondary-10);
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+
+.geek-form{
+    margin-top:2rem;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:1rem;
+}
+
+.form-group label{
+    color:var(--text-primary);
+    margin-bottom:.5rem;
+}
+
+.form-group input,
+.form-group textarea{
+    background:var(--bg);
+    border:1px solid var(--border-color);
+    color:var(--text-primary);
+    border-radius:12px;
+    padding:.9rem;
+}
+
+.form-group textarea{
+    min-height:140px;
+    resize:vertical;
+}
+
+.register-link{
+    text-align:center;
+    margin-top:1rem;
+    color:var(--text-secondary);
+}
+
+details{
+    margin-bottom:1rem;
+    border:1px solid var(--border-color);
+    border-radius:12px;
+    background:var(--bg);
+}
+
+summary{
+    padding:1rem;
+    cursor:pointer;
+    color:var(--text-primary);
+    font-weight:700;
+}
+
+details p{
+    padding:0 1rem 1rem;
+    color:var(--text-secondary);
+}
+
+.grid-cards-home{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:1rem;
+}
+
+.prefer-icon{
+    color:var(--secondary-10);
+    font-size:1.5rem;
+}
+
+.prefer-icon i:hover{
+    color:var(--primary-10);
+    cursor:pointer;
+    transition:var(--transition);
+}
