@@ -1,0 +1,55 @@
+fieldset {
+    border: 1px solid var(--primary-10);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-weight: 600;
+    color: var(--primary-10);
+    padding: 0 0.5rem;
+}
+
+label {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+input {
+    width:100%;
+    padding: 10px;
+    border: 1px solid var(--primary-10);
+    border-radius: 0.5rem;
+    background: var(--neutra);
+    transition: 0.3s;    
+    margin-bottom: .8rem;
+}
+
+input:focus {
+    border-color: var(--secondary-10);
+    outline: none;
+    box-shadow: var(--shadow-magic2);
+}
+
+/* grig */
+.form-profile {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}

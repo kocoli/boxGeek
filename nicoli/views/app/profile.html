@@ -37,56 +37,79 @@
     </header>
 
     <main class="container">
-        <form>
-            <h1>Seu perfil</h1>
-            <hr>
-            <div>
-                <h2>Informações bádicas</h2>
-                <label>Nome completo:</label>
-                <input type="text" value="Alexandro da Costa">
-                <label>Data de Nascimento:</label>
-                <input type="text" value="28/02/1996">
-                <label>Gênero:</label>
-                <input type="text" value="Panssexual">
-                <label>Email:</label>
-                <input type="email" value="alex@gmail.com">
-                <label>Nome de usuário:</label>
-                <input type="text" value="Alê-san">
-                <label>Telefone:</label>
-                <input type="text" value="(51) 99002-1571">
-            </div>
-            <div>
-                <h2>Informações de endereço</h2>
-                <label>CEP:</label>
-                <input type="text" value="92990-000">
-                <label>Endereço:</label>
-                <input type="text" value="Avenida Central">
-                <label>Número:</label>
-                <input type="text" value="302">
-                <label>Complemento:</label>
-                <input type="text" value="Apto 401">
-                <label>Bairro:</label>
-                <input type="text" value="Centro">
-                <label>Cidade:</label>
-                <input type="text" value="Eldorado do sul">
-                <label>Estado:</label>
-                <input type="text" value="RS">
-            </div>
-            <div>
-                <h2>Minhas preferências</h2>
-                <label>Leituras preferidas:</label>
-                <input type="text" value="Shounen">
-                <label>Personagem Favorito:</label>
-                <input type="text" value="Naruto">
-                <label>Gêrnero mais badalado:</label>
-                <input type="text" value="luta">
-                <label>Anime Favorito:</label>
-                <input type="text" value="Naruto shifudem">
-            </div>
-            <div>
-                <button class="btn-primary">Editar</button>
-                <button class="btn-primary" disabled>Salvar</button>
-            </div>
+        <form class="form-profile">
+            <fieldset class="basic-inf">
+                <legend>Informações Básicas</legend>
+                <div class="left">
+                    <div class="group-input">
+                        <label>Nome completo:</label>
+                        <input type="text" value="Nicóli Pereira Elesbão">
+
+                        <label>Email:</label>
+                        <input type="email" value="nicólielesbao@gmail.com">
+
+                        <label>Nome de usuário:</label>
+                        <input type="text" value="Nick-chan">
+
+                        <label>Data de aniversário:</label>
+                        <input type="text" value="10/06/2007">
+                    </div>
+                    <div class="group-input">
+
+                        <label>CEP:</label>
+                        <input type="text" value="01001-000">
+
+                        <label>Rua/avenida:</label>
+                        <input type="text" value="Rua das Espirais">
+
+                        <div class="d-flex">
+                            <label>Número:</label>
+                            <input type="text" value="Rua das Espirais">
+                        
+                            <label>Complemento:</label>
+                            <input type="text" value=" ">
+                        </div>
+
+                        <label>Bairro:</label>
+                        <input type="text" value="512">
+                        
+                        <div class="d-flex">
+                            <label>Cidade:</label>
+                            <input type="text" value="Canario Verde">
+
+                            <label>Estado:</label>
+                            <input type="text" value="RS">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="rigth">
+                    <img src="https://i.pravatar.cc/150" alt="Mudar imagem de perfil" class="profile-img-settings">
+                    <span><i class="fa-solid fa-pencil"></i></span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Preferências</legend>
+                    <div class="group-input">
+                        <label>Estilo preferido:</label>
+                        <input type="text" placeholder="Ex.: Shounen" value="Shounen" disabled>
+                    
+                        <label>Personagem favorito:</label>
+                        <input type="text" placeholder="Ex.: Naruto" value="Naruto Uzumaki" disabled>
+                    </div>
+                
+                    <div class="group-input">
+                        <label>Gênero favorito:</label>
+                        <input type="text" placeholder="Ex.: Luta" value="Luta" disabled>
+                    
+                        <label>Anime favorito:</label>
+                        <input type="text" placeholder="Ex.: Naruto Shippuden" value="Fullmetal Alchemist: Brotherhood" disabled>
+                    </div>
+                <div class="actions">
+                    <button type="button" class="btn-primary"><i class="fa-solid fa-pencil"></i>Editar</button>
+                    <button type="submit" class="btn-primary" disabled>Salvar</button>
+                </div>
+            </fieldset>
         </form>
     </main>
     <script src="../../assets/js/menus.js" defer></script>
