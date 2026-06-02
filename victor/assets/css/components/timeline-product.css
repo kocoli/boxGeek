@@ -1,0 +1,73 @@
+.timeline {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    margin: 2.5rem 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    bottom: 10px;
+    width: 3px;
+    background-color: var(--border-color);
+}
+
+.container-event {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 2.5rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content span {
+    position: absolute;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background: var(--bg-card);
+    border: 2px solid var(--border-color);
+    color: var(--text-mutted);
+}
+
+.container-event.done span {
+    background-color: #0d5026;
+    border-color: var(--success);
+    color: var(--success);
+}
+
+.container-event.done p {
+    color: var(--success)
+}
+
+.container-event.active span {
+    background-color: var(--secondary-12);
+    border-color: var(--secondary-10);
+    color: var(--secondary-10);
+}
+
+.container-event.active p {
+    color: var(--secondary-10)
+}
+
+.content p {
+    margin: 0;
+    color: var(--text-mutted);
+    font-size: .95rem;
+}
+

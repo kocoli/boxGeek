@@ -1,0 +1,125 @@
+.card-kip{
+    background:var(--bg-card);
+    border:1px solid var(--border-color);
+    border-radius:20px;
+    padding:1.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:var(--shadow-soft);
+    transition:.25s ease;
+}
+
+.card-hero:hover,
+.card-kip:hover{
+    transform:translateY(-5px);
+    background:var(--bg-hover);
+}
+
+.card-content h3{
+    color:var(--text-primary);
+    font-size:.9rem;
+    margin-bottom:.6rem;
+    font-weight:500;
+}
+
+.card-content p{
+    color:var(--text-primary);
+    font-size:1.2rem;
+    font-weight:700;
+}
+
+.card-icon{
+    width:40px;
+    height:40px;
+    border-radius:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.5rem;
+    background:rgb(138, 92, 246);
+    color:var(--primary);
+}
+
+.card-hero{
+    background:var(--bg-card);
+    border:1px solid var(--secondary-10);
+    border-radius:24px;
+    padding:2.5rem 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    overflow:hidden;
+    position:relative;
+}
+
+.card-hero .title-card2,
+.card-hero p span {
+    padding-bottom: 10px;    
+}
+
+.card-hero h2 {
+    color: var(--primary-10);
+}
+
+.card-hero p {
+    color: var(--text-primary);   
+}
+
+.card-hero p span {
+    font-weight: bolder;
+    color: var(--text-mutted);
+}
+
+
+.plans ,
+.monthTheme,
+.card-preferences {
+    padding: 1rem;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.card-preferences h2, .card-preferences p{
+    color: var(--text-primary);
+}
+
+.prefer-icon {
+    display: flex;
+    gap: .5rem;
+}
+
+.plans h2,
+.plans p {
+    color: var(--text-primary);
+}
+
+.plans p{
+    text-align: left;
+}
+
+.plans p span {
+    color: var(--primary-10);
+    font-weight: bold;
+}
+
+.monthTheme {
+    background: linear-gradient(var(--bg-card), var(--secondary-13), var(--primary-13));
+    border: 3px solid var(--primary-14);
+}
+
+.monthTheme h2 {
+    color: var(--secondary-10);
+}
+
+.monthTheme h2 span {
+    color: var(--text-primary);
+}
