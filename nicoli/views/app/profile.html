@@ -13,14 +13,16 @@
         <nav class="nav-sidebar">
             <ul class="ul-sidebar">
                 <li><a href="home.html"><i class="fa-solid fa-house"></i><span>Início</span></a></li>
-                <li><a href="profile.html"><i class="fa-solid fa-user"></i><span>Perfil</span></a></li>
-                <li><a href="#"><i class="fa-solid fa-box"></i><span>GeekBox</span></a></li>
-                <li><a href="#"><i class="fa-solid fa-file-contract"></i><span>Planos</span></a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i><span>Minha conta</span></a></li>
+                <li><a href="geekbox.html"><i class="fa-solid fa-box"></i><span>GeekBox</span></a></li>
+                <li><a href="orders.html"><i class="fa-solid fa-clipboard-list"></i><span>Meus pedidos</span></a></li>
+                <li><a href="store.html"><i class="fa-solid fa-bag-shopping"></i><span>Produtos da loja</span></a></li>
+                <li><a href="avaliation.html"><i class="fa-solid fa-star"></i><span>Minhas avaliações</span></a></li>
                 <li><a href="#"><i class="fa-solid fa-gear"></i><span>Configurações</span></a></li>
-                <li><a href="#" class="a-logout"><i class="fa-solid fa-right-from-bracket"></i><span>sair</span></a></li>
             </ul>
         </nav>
     </aside>
+
 
     <header class="header-container">
         <div class="logo">
@@ -33,84 +35,124 @@
                 <img src="https://i.pravatar.cc/150" alt="avatar" class="img-avatar-profile">
                 <span>Alê-san</span>
             </div>
+            <button class="btn-secondary">Sair</button>
         </nav>
     </header>
 
-    <main class="container">
-        <form class="form-profile">
-            <fieldset class="basic-inf">
-                <legend>Informações Básicas</legend>
-                <div class="left">
-                    <div class="group-input">
-                        <label>Nome completo:</label>
-                        <input type="text" value="Nicóli Pereira Elesbão">
-
-                        <label>Email:</label>
-                        <input type="email" value="nicólielesbao@gmail.com">
-
-                        <label>Nome de usuário:</label>
-                        <input type="text" value="Nick-chan">
-
-                        <label>Data de aniversário:</label>
-                        <input type="text" value="10/06/2007">
-                    </div>
-                    <div class="group-input">
-
-                        <label>CEP:</label>
-                        <input type="text" value="01001-000">
-
-                        <label>Rua/avenida:</label>
-                        <input type="text" value="Rua das Espirais">
-
-                        <div class="d-flex">
-                            <label>Número:</label>
-                            <input type="text" value="Rua das Espirais">
-                        
-                            <label>Complemento:</label>
-                            <input type="text" value=" ">
-                        </div>
-
-                        <label>Bairro:</label>
-                        <input type="text" value="512">
-                        
-                        <div class="d-flex">
-                            <label>Cidade:</label>
-                            <input type="text" value="Canario Verde">
-
-                            <label>Estado:</label>
-                            <input type="text" value="RS">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="rigth">
-                    <img src="https://i.pravatar.cc/150" alt="Mudar imagem de perfil" class="profile-img-settings">
-                    <span><i class="fa-solid fa-pencil"></i></span>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Preferências</legend>
-                    <div class="group-input">
-                        <label>Estilo preferido:</label>
-                        <input type="text" placeholder="Ex.: Shounen" value="Shounen" disabled>
-                    
-                        <label>Personagem favorito:</label>
-                        <input type="text" placeholder="Ex.: Naruto" value="Naruto Uzumaki" disabled>
+    <main class="container" id="edit-profile">
+            <form class="form-section" id="personal-data">
+                <h3>Dados Pessoais</h3>
+                <div class="form-grid">
+                    <div class="input-box">
+                        <label for="name">Nome completo:</label>
+                        <input type="text" id="name" placeholder="Digite seu nome completo" required>
                     </div>
                 
-                    <div class="group-input">
-                        <label>Gênero favorito:</label>
-                        <input type="text" placeholder="Ex.: Luta" value="Luta" disabled>
-                    
-                        <label>Anime favorito:</label>
-                        <input type="text" placeholder="Ex.: Naruto Shippuden" value="Fullmetal Alchemist: Brotherhood" disabled>
+                    <div class="input-box">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
                     </div>
-                <div class="actions">
-                    <button type="button" class="btn-primary"><i class="fa-solid fa-pencil"></i>Editar</button>
-                    <button type="submit" class="btn-primary" disabled>Salvar</button>
+                
+                    <div class="input-box">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" placeholder="000.000.000-00" required>
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="birth">Data de nascimento:</label>
+                        <input type="date" id="birth" required>
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="gender">Sexo:</label>
+                        <select id="gender" required>
+                            <option value="">Selecione...</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                
+                    <div class="input-box">
+                        <label for="photo">Foto de perfil:</label>
+                        <input type="file" id="photo" accept="image/*">
+                    </div>
                 </div>
-            </fieldset>
-        </form>
+            
+                <div class="btn-center">
+                    <button type="submit" class="btn-primary">Salvar Alterações</button>
+                </div>
+            </form>
+        
+        
+            <!-- ======== ALTERAR SENHA ======== -->
+            <form class="form-section" id="password-change">
+                <h3>Alterar Senha</h3>
+                <div class="input-box">
+                    <label for="current-password">Senha atual:</label>
+                    <input type="password" id="current-password" required>
+                </div>
+            
+                <div class="input-box">
+                    <label for="new-password">Nova senha:</label>
+                    <input type="password" id="new-password" required>
+                </div>
+            
+                <div class="input-box">
+                    <label for="confirm-password">Confirmar nova senha:</label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+            
+                <div class="btn-center">
+                    <button type="submit" class="btn-primary">Atualizar Senha</button>
+                </div>
+            </form>
+        
+        
+            <!-- ======== MUDAR PLANO ======== -->
+            <form class="form-section" id="plan-change">
+                <h3>Plano de Assinatura</h3>
+                <p class="desc">Escolha o plano que melhor se encaixa com o seu perfil:</p>
+            
+                <div class="plans">
+                    <label class="plan-card">
+                        <input type="radio" name="plan" value="normal" checked>
+                        <div class="plan-info">
+                            <h4>Normal</h4>
+                            <p>Gratuito • Acesso básico</p>
+                        </div>
+                    </label>
+                
+                    <label class="plan-card">
+                        <input type="radio" name="plan" value="premium">
+                        <div class="plan-info">
+                            <h4>Premium</h4>
+                            <p>R$ 29,90/mês • Destaques em produtos</p>
+                        </div>
+                    </label>
+                
+                    <label class="plan-card">
+                        <input type="radio" name="plan" value="plus">
+                        <div class="plan-info">
+                            <h4>Plus</h4>
+                            <p>R$ 49,90/mês • Vantagens exclusivas e suporte prioritário</p>
+                        </div>
+                    </label>
+                </div>
+                <div class="btn-center">
+                    <button type="submit" class="btn-primary">Atualizar Plano</button>
+                </div>
+            </form>
+        
+        
+            <!-- ======== EXCLUIR CONTA ======== -->
+            <div class="form-section danger-zone">
+                <h3>Excluir Conta</h3>
+                <p>Para excluir seus dados pessoais você será direcionado para uma nova página, preencha os campos obrigatórios e envie a       solicitação. A ação é <strong>irreversível</strong> leia a nossa <a href="#">Politica de privacidade</a> antes de exclir sua    conta.</p>
+                <div class="btn-center">
+                    <button class="btn-delete">Excluir Conta</button>
+                </div>
+            </div>
     </main>
     <script src="../../assets/js/menus.js" defer></script>
 </body>

@@ -1,55 +1,90 @@
-fieldset {
-    border: 1px solid var(--primary-10);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
+#edit-profile {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: var(--bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-hard);
 }
 
-legend {
-    font-weight: 600;
+#edit-profile h2 {
+    text-align: center;
     color: var(--primary-10);
-    padding: 0 0.5rem;
+    margin-bottom: 2rem;
 }
 
-label {
-    font-weight: 500;
+/* =========== Form Sections =========== */
+.form-section {
+    margin-bottom: 2.5rem;
+    border: 1px solid var(--primary-10);
+    border-radius: 12px;
+    padding: 1.5rem;
+    background: var(--bg-card);
+}
+
+.form-section h3 {
+    text-align: center;
+    color: var(--primary-10);
+    margin-bottom: 1rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.5rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
     color: var(--text-primary);
 }
 
-input {
-    width:100%;
-    padding: 10px;
+.input-box input,
+.input-box select,
+.input-box textarea {
     border: 1px solid var(--primary-10);
-    border-radius: 0.5rem;
-    background: var(--neutra);
-    transition: 0.3s;    
-    margin-bottom: .8rem;
+    border-radius: 8px;
+    padding: 0.7rem;
+    font-size: 0.95rem;
+    color: var(--secondary-14);
 }
 
-input:focus {
-    border-color: var(--secondary-10);
+.input-box input:focus,
+.input-box select:focus {
     outline: none;
+    border-color: var(--secondary-10);
     box-shadow: var(--shadow-magic2);
 }
 
-/* grig */
-.form-profile {
-    width: 100%;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* =========== Danger Zone =========== */
+.danger-zone {
+    background: #b02a3766;
+    border: 1px solid #f8d7da;
 }
 
-fieldset {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 1rem;
+.danger-zone h3 {
+    color: var(--text-primary);
 }
 
-.left {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+.danger-zone p {
+    color: var(--text-secondary);
+    margin: 0.5rem 0 1rem;
+}
+
+/* =========== Responsividade =========== */
+@media (max-width: 700px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #edit-profile {
+        padding: 1.2rem;
+    }
+
 }

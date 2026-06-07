@@ -1,0 +1,34 @@
+/* =========== Plan Cards =========== */
+.plans {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.plan-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid var(--secondary-10);
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: var(--bg);
+}
+
+.plan-card:hover {
+    border-color: var(--secondary-13);
+    box-shadow: var(--shadow-magic1);
+}
+
+.plan-card input {
+    accent-color: var(--primary-10);
+}
+
+.plan-card .plan-info h4 {
+    margin-bottom: 0.3rem;
+    color: var(--primary-10);
+}

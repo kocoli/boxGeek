@@ -1,3 +1,9 @@
+.btn-center {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .btn-icon {
     width: 40px;
     background: transparent;
@@ -37,4 +43,25 @@
     background-color: var(--secondary-12);
     border: solid 3px var(--text-secondary);
     color: var(--text-secondary);
+}
+
+.btn-delete {
+    background: #d9534f;
+    color: var(--bg-card);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-delete:hover {
+    background: #b02a37;
+}
+
+@media (max-width: 700px) {
+    .btn-delete {
+        width: 100%;
+    }
 }
