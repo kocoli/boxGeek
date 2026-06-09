@@ -8,3 +8,8 @@
     --font-logo: "Montserrat", "Space Grotesk", "Arial", sans-serif;
     --font-text: "Open Sans", "Arial", sans-serif;
 }
+
+h2 {
+    text-align: center;
+    color: var(--primary-10);
+}

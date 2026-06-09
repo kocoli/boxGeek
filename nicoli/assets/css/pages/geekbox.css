@@ -1,0 +1,116 @@
+/* ===== PRODUTOS ===== */
+#products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: var(--bg-card);
+    border: 1px solid var(--primary-10);
+    border-radius: 12px;
+    box-shadow: var(--shadow-hard);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    border: 1px solid var(--secondary-10);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-magic2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.product-info h3 {
+    color: var(--primary-10);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.product-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+}
+
+.product-info .price {
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+}
+
+/* seção de cupons*/
+
+.cupom-recompensa {
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background: var(--bg-card);
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+}
+
+.cupom-recompensa h2 {
+    color: var(--primary-10);
+    margin-bottom: 1rem;
+}
+
+.cupom-recompensa p {
+    color: var(--text-secondary);
+}
+
+.cupom-recompensa p span{
+    font-weight: bold;
+    color: var(--secondary-10);
+}
+
+.contador-cupons {
+    max-width: 500px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background: var(--bg-hover);
+    border-radius: 12px;
+}
+
+.contador-cupons span {
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primary-10);
+    line-height: 1;
+}
+
+.contador-cupons small {
+    color: var(--text-mutted);
+}
+
+.recompensa-liberada {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #d4edda;
+    color: #155724;
+}
+
+.recompensa-liberada a {
+    color: inherit;
+    font-weight: bold;
+}

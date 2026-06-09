@@ -1,0 +1,174 @@
+#orders {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: var(--bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+}
+
+#orders h2 {
+    text-align: center;
+    color: var(--primary-10);
+    margin-bottom: 2rem;
+}
+
+/* ====== FILTROS ====== */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.status-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+/* ====== LISTAGEM ====== */
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.order-card {
+    border: 1px solid var(--secondary-10);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    background: var(--bg-card);
+    box-shadow: var(--shadow-hard);
+    transition: all 0.3s ease;
+}
+
+.order-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hard);
+}
+
+.order-card header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.order-status {
+    padding: 0.3rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+}
+
+.order-status.aberto { background: #ffc107; }
+.order-status.finalizado { background: #28a745; }
+.order-status.cancelado { background: #dc3545; }
+
+.order-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.order-info img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--secondary-10);
+}
+
+.order-info h4 {
+    color: var(--primary-10);
+    margin-bottom: 0.3rem;
+}
+
+.order-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* ====== AÃ‡Ã•ES ====== */
+.order-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.order-actions button {
+    border: none;
+    border-radius: 20px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-detail {
+    background: var(--primary-10);
+    color: var(--neutra);
+}
+
+.btn-detail:hover {
+    background: var(--primary-10);
+}
+
+.btn-cancel {
+    background: #f8d7da;
+    color: #b02a37;
+}
+
+.btn-cancel:hover {
+    background: #f5c2c7;
+}
+
+.btn-refund {
+    background: var(--secondary-10);
+    color: var(--text-primary);
+}
+
+.btn-refund:hover {
+    background: var(--btn-primary);
+    transform: scale(1.05);
+}
+
+.btn-disabled {
+    background: #e9ecef;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar {
+        max-width: 100%;
+    }
+
+    .order-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-info img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .order-actions {
+        flex-direction: column;
+    }
+
+    .order-actions button {
+        width: 100%;
+    }
+}
